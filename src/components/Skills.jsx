@@ -1,16 +1,32 @@
 // src/components/Skills.js
 import React from 'react';
 import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
+import {
+    RiReactjsLine,
+    RiJavascriptLine,
+    RiHtml5Line,
+    RiBootstrapLine,
+    RiPaletteLine,
+    RiGitBranchLine,
+    RiJavaLine,
+    RiServerLine,
+    RiDatabase2Line,
+    RiStackLine
+} from '@remixicon/react';
 import '../../src/styles/Skills.css';
 
 const Skills = () => {
     const skills = [
-        { name: 'React', level: 90 },
-        { name: 'JavaScript', level: 85 },
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'Bootstrap', level: 88 },
-        { name: 'UI/UX Design', level: 75 },
-        { name: 'Figma', level: 80 }
+        { name: 'React', level: 50, icon: <RiReactjsLine /> },
+        { name: 'JavaScript', level: 60, icon: <RiJavascriptLine /> },
+        { name: 'HTML/CSS', level: 70, icon: <RiHtml5Line /> },
+        { name: 'Bootstrap', level: 50, icon: <RiBootstrapLine /> },
+        { name: 'UI/UX Design', level: 90, icon: <RiPaletteLine /> },
+        { name: 'Git/GitHub', level: 60, icon: <RiGitBranchLine /> },
+        { name: 'Java', level: 80, icon: <RiJavaLine /> },
+        { name: 'Spring Boot', level: 80, icon: <RiServerLine /> },
+        { name: 'PostgreSQL', level: 70, icon: <RiDatabase2Line /> },
+        { name: 'MongoDB', level: 40, icon: <RiStackLine /> },
     ];
 
     return (
@@ -27,7 +43,12 @@ const Skills = () => {
                         <Col key={index} lg={6} className="mb-4">
                             <div className="skill-item">
                                 <div className="skill-header d-flex justify-content-between mb-2">
-                                    <span className="skill-name">{skill.name}</span>
+                                    <div className="d-flex align-items-center">
+                                        <span className="skill-icon me-2">
+                                            {skill.icon}
+                                        </span>
+                                        <span className="skill-name">{skill.name}</span>
+                                    </div>
                                     <span className="skill-percentage">{skill.level}%</span>
                                 </div>
                                 <ProgressBar

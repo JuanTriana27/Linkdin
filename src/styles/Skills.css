@@ -28,3 +28,39 @@
     color: var(--secondary-color);
     font-weight: 600;
 }
+
+/* src/styles/Skills.css */
+.skill-icon {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.skill-percentage {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.skill-progress {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress .progress-bar {
+    background: linear-gradient(45deg, var(--secondary-color), #667eea);
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Asegurar que el header de la skill esté alineado */
+.skill-header {
+    align-items: center;
+}

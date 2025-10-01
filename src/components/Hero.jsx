@@ -51,7 +51,7 @@ const Hero = () => {
                 </Modal.Header>
                 <Modal.Body style={{ height: '80vh' }}>
                     <iframe
-                        src="/PDF/Profile.pdf"
+                        src="/assets/PDF/Profile.pdf"
                         title="CV"
                         width="100%"
                         height="100%"
