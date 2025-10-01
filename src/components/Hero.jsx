@@ -1,7 +1,7 @@
 // src/components/Hero.js
 import React from 'react';
 import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
-import { RiPlayFill } from '@remixicon/react';
+import { RiPlayFill, RiInstagramLine, RiGithubFill, RiLinkedinFill } from '@remixicon/react';
 import { useNavigate } from 'react-router-dom';
 import '../../src/styles/Hero.css';
 
@@ -18,6 +18,19 @@ const Hero = () => {
 
     return (
         <section className="hero">
+            {/* Redes Sociales */}
+            <div className="social-icons-hero">
+                <a href="https://www.instagram.com/juan_triiana/" target="_blank" rel="noreferrer">
+                    <RiInstagramLine />
+                </a>
+                <a href="https://www.linkedin.com/in/juan-triana27/" target="_blank" rel="noreferrer">
+                    <RiLinkedinFill />
+                </a>
+                <a href="https://github.com/JuanTriana27" target="_blank" rel="noreferrer">
+                    <RiGithubFill />
+                </a>
+            </div>
+
             <Container>
                 <Row className="align-items-center">
                     <Col lg={6} className="hero-text">
