@@ -1,0 +1,30 @@
+/* src/components/Skills.css */
+.skills-section {
+    background-color: var(--bg-light) !important;
+}
+
+.skill-progress {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress .progress-bar {
+    background: linear-gradient(45deg, var(--secondary-color), #667eea);
+    border-radius: 10px;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.skill-percentage {
+    color: var(--secondary-color);
+    font-weight: 600;
+}

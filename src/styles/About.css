@@ -1,0 +1,27 @@
+/* src/components/About.css */
+.about-section {
+    background-color: var(--white);
+}
+
+.about-image img {
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+}
+
+.about-text {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.about-details .detail-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.about-details .detail-item:last-child {
+    border-bottom: none;
+}
