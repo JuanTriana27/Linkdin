@@ -43,6 +43,15 @@ const Trabajos = () => {
             liveLink: 'https://inmobiliariadb.netlify.app/',
             githubLink: 'https://github.com/JuanTriana27/Ecommerce',
             useIframe: true
+        },
+        {
+            id: 5,
+            title: 'Colventanas, empresa de ventaneria y metales arquitectonicos',
+            description: 'Aplicación web para gestión de ventas y catálogo de productos de ventanería y metales arquitectónicos. Desarrollada con React.',
+            technologies: ['React', 'CSS3', 'Bootstrap'],
+            liveLink: 'https://colventanas.netlify.app/',
+            githubLink: 'https://github.com/JuanTriana27/colventanas',
+            useIframe: true
         }
     ];
 
