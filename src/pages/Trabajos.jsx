@@ -61,6 +61,15 @@ const Trabajos = () => {
             liveLink: 'http://blog-curso.rf.gd/',
             githubLink: 'https://github.com/JuanTriana27/Blog_Noticias',
             useIframe: true
+        },
+        {
+            id: 7,
+            title: 'Galeria de Imagenes',
+            description: 'Aplicación web para gestión de una galería de imágenes. Desarrollada con PHP y Db en MariaDB. Subido en InfinityFree.',
+            technologies: ['PHP', 'CSS', 'MariaDB'],
+            liveLink: 'https://galeria-curso.infinityfree.me/',
+            githubLink: 'https://github.com/JuanTriana27/Galeria_Imagenes',
+            useIframe: true
         }
     ];
 
