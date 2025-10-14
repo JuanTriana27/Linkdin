@@ -21,7 +21,7 @@ const Trabajos = () => {
             id: 2,
             title: 'Cali Travel Guide',
             description: 'Trabajo de grado enfocado en turismo local en Cali, Colombia. Desarrollado con React, Node.js y MongoDB.',
-            technologies: ['React', 'Node.js', 'MongoDB' , 'CSS3', 'API REST', 'Bootstrap', 'EmailJS'],
+            technologies: ['React', 'Node.js', 'MongoDB', 'CSS3', 'API REST', 'Bootstrap', 'EmailJS'],
             liveLink: 'https://calitravelguide.netlify.app/',
             githubLink: 'https://github.com/JuanTriana27/Tienda-Aviones',
             useIframe: true
@@ -52,6 +52,15 @@ const Trabajos = () => {
             liveLink: 'https://colventanas.netlify.app/',
             githubLink: 'https://github.com/JuanTriana27/colventanas',
             useIframe: true
+        },
+        {
+            id: 6,
+            title: 'Blog de Noticias',
+            description: 'Aplicación web para gestión de un blog de noticias. Desarrollada con PHP y Db en MariaDB. Subido en InfinityFree.\n\nACCESO AL PANEL DE ADMINISTRACIÓN:\nURL: /login.php\nUsuario: admin\nContraseña: admin',
+            technologies: ['PHP', 'CSS', 'MariaDB'],
+            liveLink: 'http://blog-curso.rf.gd/',
+            githubLink: 'https://github.com/JuanTriana27/Blog_Noticias',
+            useIframe: true
         }
     ];
 
@@ -79,14 +88,14 @@ const Trabajos = () => {
                                         <div className="iframe-overlay">
                                             🖱️ Interactivo
                                         </div>
-                                        
+
                                         {/* Loader mientras carga */}
                                         {!loadedIframes[project.id] && (
                                             <div className="iframe-loading">
                                                 Cargando aplicación...
                                             </div>
                                         )}
-                                        
+
                                         {/* Iframe completamente interactivo */}
                                         <iframe
                                             src={project.liveLink}
@@ -95,7 +104,7 @@ const Trabajos = () => {
                                             sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-pointer-lock"
                                             loading="lazy"
                                             onLoad={() => handleIframeLoad(project.id)}
-                                            style={{ 
+                                            style={{
                                                 opacity: loadedIframes[project.id] ? 1 : 0,
                                                 transition: 'opacity 0.3s ease'
                                             }}
@@ -109,7 +118,7 @@ const Trabajos = () => {
                                         style={{ height: '250px', objectFit: 'cover' }}
                                     />
                                 )}
-                                
+
                                 <Card.Body className="d-flex flex-column">
                                     <Card.Title className="project-title">{project.title}</Card.Title>
                                     <Card.Text className="project-description">
@@ -158,7 +167,7 @@ const Trabajos = () => {
                     <Col className="text-center">
                         <div className="project-note">
                             <p>
-                                <strong>Nota:</strong> Los proyectos con iframe son completamente interactivos. 
+                                <strong>Nota:</strong> Los proyectos con iframe son completamente interactivos.
                                 Puedes hacer clic, navegar y probar las funcionalidades directamente.
                             </p>
                         </div>
