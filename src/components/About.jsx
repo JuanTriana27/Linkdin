@@ -20,9 +20,9 @@ const About = () => {
                     <Col lg={6}>
                         <h2 className="section-title mb-4">Sobre Mí</h2>
                         <p className="about-text lead">
-                            Soy un Ingeniero Multimedia apasionado por el desarrollo frontend,
-                            la creación de experiencias digitales impactantes y aprendiendo backend también.
-                            Me especializo en React, JavaScript y diseño de interfaces modernas.
+                            Soy Ingeniero Multimedia con una sólida orientación hacia el desarrollo frontend y 
+                            la creación de experiencias digitales atractivas e intuitivas. Actualmente amplío mis 
+                            conocimientos en desarrollo backend para complementar mi perfil técnico.
                         </p>
                         <p>
                             Mi objetivo es crear soluciones web que no solo sean visualmente atractivas,

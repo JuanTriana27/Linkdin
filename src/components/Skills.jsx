@@ -11,22 +11,27 @@ import {
     RiJavaLine,
     RiServerLine,
     RiDatabase2Line,
-    RiStackLine
+    RiStackLine,
+    RiCodeBoxLine,
+    RiDatabaseLine
 } from '@remixicon/react';
 import '../../src/styles/Skills.css';
 
 const Skills = () => {
     const skills = [
-        { name: 'React', level: 50, icon: <RiReactjsLine /> },
-        { name: 'JavaScript', level: 60, icon: <RiJavascriptLine /> },
+        { name: 'React', level: 30, icon: <RiReactjsLine /> },
+        { name: 'JavaScript', level: 40, icon: <RiJavascriptLine /> },
         { name: 'HTML/CSS', level: 70, icon: <RiHtml5Line /> },
-        { name: 'Bootstrap', level: 50, icon: <RiBootstrapLine /> },
-        { name: 'UI/UX Design', level: 90, icon: <RiPaletteLine /> },
+        { name: 'Bootstrap', level: 30, icon: <RiBootstrapLine /> },
+        { name: 'UI/UX Design', level: 70, icon: <RiPaletteLine /> },
         { name: 'Git/GitHub', level: 60, icon: <RiGitBranchLine /> },
-        { name: 'Java', level: 80, icon: <RiJavaLine /> },
-        { name: 'Spring Boot', level: 80, icon: <RiServerLine /> },
-        { name: 'PostgreSQL', level: 70, icon: <RiDatabase2Line /> },
-        { name: 'MongoDB', level: 40, icon: <RiStackLine /> },
+        { name: 'Java', level: 70, icon: <RiJavaLine /> },
+        { name: 'Spring Boot', level: 70, icon: <RiServerLine /> },
+        { name: 'PostgreSQL', level: 60, icon: <RiDatabase2Line /> },
+        { name: 'MongoDB', level: 20, icon: <RiStackLine /> },
+        { name: 'PHP', level: 60, icon: <RiCodeBoxLine /> },
+        { name: 'MySQL', level: 60, icon: <RiDatabaseLine /> },
+
     ];
 
     return (
