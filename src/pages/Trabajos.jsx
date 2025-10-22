@@ -46,6 +46,15 @@ const Trabajos = () => {
         },
         {
             id: 5,
+            title: 'Gimnasio',
+            description: 'Aplicación web para gestión de un gimansio. Desarrollada con React y SpringBoot.',
+            technologies: ['React', 'CSS', 'Bootstrap', 'SpringBoot', 'PostgreSQL', 'Render', 'Supabase'],
+            liveLink: 'https://frontend-fitbooker.vercel.app/usuarios',
+            githubLink: 'https://github.com/JuanTriana27/Gimansio-Spring',
+            useIframe: true
+        },
+        {
+            id: 6,
             title: 'Colventanas, empresa de ventaneria y metales arquitectonicos',
             description: 'Aplicación web para gestión de ventas y catálogo de productos de ventanería y metales arquitectónicos. Desarrollada con React.',
             technologies: ['React', 'CSS3', 'Bootstrap'],
@@ -54,7 +63,7 @@ const Trabajos = () => {
             useIframe: true
         },
         {
-            id: 6,
+            id: 7,
             title: 'Blog de Noticias',
             description: 'Aplicación web para gestión de un blog de noticias. Desarrollada con PHP y Db en MariaDB. Subido en InfinityFree.\n\nACCESO AL PANEL DE ADMINISTRACIÓN:\nURL: /login.php\nUsuario: admin\nContraseña: admin',
             technologies: ['PHP', 'CSS', 'MariaDB'],
@@ -63,7 +72,7 @@ const Trabajos = () => {
             useIframe: true
         },
         {
-            id: 7,
+            id: 8,
             title: 'Galeria de Imagenes',
             description: 'Aplicación web para gestión de una galería de imágenes. Desarrollada con PHP y Db en MariaDB. Subido en InfinityFree.',
             technologies: ['PHP', 'CSS', 'MariaDB'],
