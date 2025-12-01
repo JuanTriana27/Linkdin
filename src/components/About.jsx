@@ -7,17 +7,8 @@ const About = () => {
     return (
         <section id="about" className="about-section py-5">
             <Container>
-                <Row className="align-items-center">
-                    <Col lg={6} className="mb-4 mb-lg-0">
-                        <div className="about-image">
-                            <img
-                                src="/assets/imgs/about.png"
-                                alt="Sobre mí"
-                                className="img-fluid rounded"
-                            />
-                        </div>
-                    </Col>
-                    <Col lg={6}>
+                <Row className="justify-content-center">
+                    <Col lg={8} md={10} className="text-center">
                         <h2 className="section-title mb-4">Sobre Mí</h2>
                         <p className="about-text lead">
                             Soy Ingeniero Multimedia con una sólida orientación hacia el desarrollo frontend y 
@@ -28,12 +19,12 @@ const About = () => {
                             Mi objetivo es crear soluciones web que no solo sean visualmente atractivas,
                             sino también funcionales, accesibles y optimizadas para el usuario.
                         </p>
-                        <div className="about-details mt-4">
+                        <div className="about-details mt-4 mx-auto">
                             <div className="detail-item mb-2">
                                 <strong>Nombre:</strong> Juan Esteban Triana González
                             </div>
                             <div className="detail-item mb-2">
-                                <strong>Experiencia:</strong> 1 años en desarrollo web
+                                <strong>Experiencia:</strong> 1 año en desarrollo web
                             </div>
                             <div className="detail-item mb-2">
                                 <strong>Email:</strong> trianajuan28@gmail.com

@@ -15,9 +15,9 @@ const Contact = () => {
         const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
         if (publicKey) {
             emailjs.init(publicKey);
-            console.log('✅ EmailJS inicializado con Public Key:', publicKey);
+            console.log('');
         } else {
-            console.error('❌ Public Key no encontrada en variables de entorno');
+            console.error('Public Key no encontrada en variables de entorno');
         }
     }, []);
 
