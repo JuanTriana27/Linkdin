@@ -1,14 +1,15 @@
 // src/pages/Trabajos.js
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { 
-  RiExternalLinkLine, 
-  RiGithubLine, 
-  RiCodeLine, 
-  RiServerLine, 
-  RiStackLine, 
-  RiHtml5Line, 
-  RiReactjsLine, 
+import {
+  RiExternalLinkLine,
+  RiGithubLine,
+  RiCodeLine,
+  RiServerLine,
+  RiStackLine,
+  RiHtml5Line,
+  RiReactjsLine,
+  RiAngularjsLine,
   RiDatabaseLine,
   RiJavascriptLine,
   RiBootstrapLine,
@@ -29,21 +30,21 @@ const PhpIcon = () => <RiServerLine />;
 // Icono de Three.js
 const ThreeJsIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#049ef4">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-.9-.63c-.33-.23-.57-.52-.7-.85L8 15v-2l.4-1.37c.13-.33.37-.62.7-.85L10 10l1.37-.4c.33-.13.62-.37.85-.7L12 8l.78 1.9c.23.33.52.57.85.7L15 10l1.37.4c.33.13.62.37.85.7L18 12l-.9.63c-.33.23-.57.52-.7.85L16 14v2l-.4 1.37c-.13.33-.37.62-.7.85L14 18l-1.37.4c-.33.13-.62.37-.85.7L12 20l-.78-1.9c-.23-.33-.52-.57-.85-.7L9 18l-1.37-.4z"/>
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-.9-.63c-.33-.23-.57-.52-.7-.85L8 15v-2l.4-1.37c.13-.33.37-.62.7-.85L10 10l1.37-.4c.33-.13.62-.37.85-.7L12 8l.78 1.9c.23.33.52.57.85.7L15 10l1.37.4c.33.13.62.37.85.7L18 12l-.9.63c-.33.23-.57.52-.7.85L16 14v2l-.4 1.37c-.13.33-.37.62-.7.85L14 18l-1.37.4c-.33.13-.62.37-.85.7L12 20l-.78-1.9c-.23-.33-.52-.57-.85-.7L9 18l-1.37-.4z" />
   </svg>
 );
 
 // Icono de WebSockets
 const WebSocketIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#ff6b6b">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-.9-.63c-.33-.23-.57-.52-.7-.85L8 15v-2l.4-1.37c.13-.33.37-.62.7-.85L10 10l1.37-.4c.33-.13.62-.37.85-.7L12 8l.78 1.9c.23.33.52.57.85.7L15 10l1.37.4c.33.13.62.37.85.7L18 12l-.9.63c-.33.23-.57.52-.7.85L16 14v2l-.4 1.37c-.13.33-.37.62-.7.85L14 18l-1.37.4c-.33.13-.62.37-.85.7L12 20l-.78-1.9c-.23-.33-.52-.57-.85-.7L9 18l-1.37-.4z"/>
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-.9-.63c-.33-.23-.57-.52-.7-.85L8 15v-2l.4-1.37c.13-.33.37-.62.7-.85L10 10l1.37-.4c.33-.13.62-.37.85-.7L12 8l.78 1.9c.23.33.52.57.85.7L15 10l1.37.4c.33.13.62.37.85.7L18 12l-.9.63c-.33.23-.57.52-.7.85L16 14v2l-.4 1.37c-.13.33-.37.62-.7.85L14 18l-1.37.4c-.33.13-.62.37-.85.7L12 20l-.78-1.9c-.23-.33-.52-.57-.85-.7L9 18l-1.37-.4z" />
   </svg>
 );
 
 // Icono de PostgreSQL
 const PostgresqlIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#336791">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-.9-.63c-.33-.23-.57-.52-.7-.85L8 15v-2l.4-1.37c.13-.33.37-.62.7-.85L10 10l1.37-.4c.33-.13.62-.37.85-.7L12 8l.78 1.9c.23.33.52.57.85.7L15 10l1.37.4c.33.13.62.37.85.7L18 12l-.9.63c-.33.23-.57.52-.7.85L16 14v2l-.4 1.37c-.13.33-.37.62-.7.85L14 18l-1.37.4c-.33.13-.62.37-.85.7L12 20l-.78-1.9c-.23-.33-.52-.57-.85-.7L9 18l-1.37-.4z"/>
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-.9-.63c-.33-.23-.57-.52-.7-.85L8 15v-2l.4-1.37c.13-.33.37-.62.7-.85L10 10l1.37-.4c.33-.13.62-.37.85-.7L12 8l.78 1.9c.23.33.52.57.85.7L15 10l1.37.4c.33.13.62.37.85.7L18 12l-.9.63c-.33.23-.57.52-.7.85L16 14v2l-.4 1.37c-.13.33-.37.62-.7.85L14 18l-1.37.4c-.33.13-.62.37-.85.7L12 20l-.78-1.9c-.23-.33-.52-.57-.85-.7L9 18l-1.37-.4z" />
   </svg>
 );
 
@@ -55,7 +56,7 @@ const Trabajos = () => {
     frontend: [
       {
         id: 5,
-        title: 'Gimnasio - Frontend',
+        title: 'Gimnasio - Frontend React',
         description: 'Frontend de aplicación web para gestión de un gimnasio. Desarrollada con React.',
         detailedDescription: `
           Interfaz de usuario que incluye:
@@ -125,6 +126,28 @@ const Trabajos = () => {
         githubLink: 'https://github.com/JuanTriana27/pintandoFront',
         type: 'react',
         showLiveDemo: false
+      },
+      {
+        id: 10,
+        title: 'Calculadora - Frontend Angular',
+        description: 'Calculadora básica desarrollada con Angular.',
+        detailedDescription: `
+          Interfaz que incluye:
+          • Operaciones básicas
+          • Diseño responsive
+        `,
+        technologies: [
+          { name: 'Angular', icon: <RiAngularjsLine />, color: '#ff0000ff' },
+          { name: 'SCSS', icon: <RiCodeLine />, color: '#2965f1' },
+          { name: 'Bootstrap', icon: <RiBootstrapLine />, color: '#7952b3' }
+        ],
+        features: [
+          'Operaciones básicas',
+          'Diseño responsive'
+        ],
+        githubLink: 'https://github.com/JuanTriana27/calculadora-front-node',
+        type: '',
+        showLiveDemo: false
       }
     ],
     backend: [
@@ -183,6 +206,29 @@ const Trabajos = () => {
           'Despliegue con Docker en Render'
         ],
         githubLink: 'https://github.com/JuanTriana27/uniBack',
+        type: 'spring',
+        showLiveDemo: false
+      },
+      {
+        id: 4,
+        title: 'Calculadora - Backend Node.js',
+        description: 'Backend para calculadora básica desarrollado con Node.js.',
+        detailedDescription: `
+          API REST que incluye:
+          • Historial de cálculos
+          • Operaciones básicas
+        `,
+        technologies: [
+          { name: 'Node.js', icon: <RiNodejsLine />, color: '#6db33f' },
+          { name: 'MongoDB', icon: <PostgresqlIcon />, color: '#336791' },
+          { name: 'Render', icon: <RiServerLine />, color: '#46e3b7' }
+        ],
+        features: [
+          'API REST para cálculos',
+          'Historial de operaciones',
+          'Operaciones básicas'
+        ],
+        githubLink: 'https://github.com/JuanTriana27/CalcNodeBack',
         type: 'spring',
         showLiveDemo: false
       }
@@ -299,6 +345,25 @@ const Trabajos = () => {
         loadTimeNote: true
       },
       {
+        id: 13,
+        title: 'Calculadora - Full Stack Node.js + Angular',
+        description: 'Calculadora ',
+        technologies: [
+          { name: 'Node.JS', icon: <RiNodejsLine />, color: '#6db33f' },
+          { name: 'Angular', icon: <RiAngularjsLine />, color: '#ff0000ff' },
+          { name: 'Bootstrap', icon: <RiBootstrapLine />, color: '#7952b3' }
+        ],
+        features: [
+          'Calculadora básica',
+          'Historial de cálculos',
+          'Diseño responsive'
+        ],
+        liveLink: 'https://calculadora-front-node.vercel.app/',
+        githubLink: 'https://github.com/JuanTriana27/CalcNodeBack',
+        useIframe: true,
+        loadTimeNote: true
+      },
+      {
         id: 7,
         title: 'Blog de Noticias - PHP',
         description: 'Aplicación web para gestión de un blog de noticias. Desarrollada con PHP y MariaDB.',
@@ -355,7 +420,7 @@ const Trabajos = () => {
       <Card className="project-card h-100">
         <Card.Body className="d-flex flex-column">
           <div className="project-header mb-3">
-            <div className="tech-icon" style={{ 
+            <div className="tech-icon" style={{
               background: project.technologies[0].color + '15',
               border: `2px solid ${project.technologies[0].color}30`
             }}>
@@ -365,9 +430,9 @@ const Trabajos = () => {
               Frontend
             </span>
           </div>
-          
+
           <Card.Title className="project-title">{project.title}</Card.Title>
-          
+
           <Card.Text className="project-description">
             {project.description}
           </Card.Text>
@@ -422,7 +487,7 @@ const Trabajos = () => {
       <Card className="project-card h-100">
         <Card.Body className="d-flex flex-column">
           <div className="project-header mb-3">
-            <div className="tech-icon" style={{ 
+            <div className="tech-icon" style={{
               background: project.technologies[0].color + '15',
               border: `2px solid ${project.technologies[0].color}30`
             }}>
@@ -432,9 +497,9 @@ const Trabajos = () => {
               Backend
             </span>
           </div>
-          
+
           <Card.Title className="project-title">{project.title}</Card.Title>
-          
+
           <Card.Text className="project-description">
             {project.description}
           </Card.Text>
@@ -520,7 +585,7 @@ const Trabajos = () => {
 
         <Card.Body className="d-flex flex-column">
           <Card.Title className="project-title">{project.title}</Card.Title>
-          
+
           <Card.Text className="project-description">
             {project.description}
             {project.loadTimeNote && (
@@ -535,7 +600,7 @@ const Trabajos = () => {
 
           <div className="tech-stack-preview mb-3">
             {project.technologies.slice(0, 3).map((tech, index) => (
-              <span key={index} className="tech-badge-preview" style={{ 
+              <span key={index} className="tech-badge-preview" style={{
                 background: tech.color + '20',
                 color: tech.color,
                 border: `1px solid ${tech.color}40`
