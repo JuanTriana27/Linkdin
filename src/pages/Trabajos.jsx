@@ -316,7 +316,7 @@ const Trabajos = () => {
           'Sistema de agentes',
           'Backend en Render (puede tardar en cargar)'
         ],
-        liveLink: 'https://inmobiliariadb.netlify.app/',
+        liveLink: 'https://uni-front-seven.vercel.app/',
         githubLink: 'https://github.com/JuanTriana27/Ecommerce',
         useIframe: true,
         loadTimeNote: true
